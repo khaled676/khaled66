@@ -1,0 +1,122 @@
+
+/*body{
+    background-image: url(img/background\ css.png);
+    background-size: cover;/
+}*/
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
+
+*{
+    margin: 0px;
+    padding: 0px;
+    scroll-behavior: smooth;
+    box-sizing: border-box;
+    font-family: Arial', sans-serif';
+    font-size: large;
+}
+
+body{
+background-color: #222831;
+}
+
+
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items:center;
+    margin: 2px auto ;
+    padding: 15px;
+    background-color: #4caab9;
+}
+
+.navbar ul{
+    display: flex;
+    list-style-type: none;
+    gap: 25px;
+    margin: 0px;
+    padding: 0px;
+}
+
+.navbar li{
+    margin: 0px;
+}
+
+
+.navbar  a{
+    text-decoration: none;
+    color: #eeeeee;
+    align-items: center;
+    display:block;
+    padding: 15px 20px;
+    font-weight: bold;
+    background-color: transparent;
+    transition: background-color 0.3s;
+}
+
+.navbar li a:hover{
+    color:#222831 ;
+}
+
+
+.hero{
+text-align: center;
+align-items: center;
+}
+
+.logo{
+    width: 1000px;
+}
+
+.btn {
+padding: 10px 25px;
+background-color: #48a9b0;
+color: white;
+border: none black thick;
+border-radius: 15px;
+font-size: 20px;
+cursor: pointer;
+}
+
+.title{
+    color: #48a9b0;
+    font-size: xx-large;
+
+}
+
+@media (max-width: 768px) {
+  .navbar ul {
+    flex-direction:row;  /* ترتيب الروابط عمودياً */
+    gap: 10px;
+  }
+
+  .logo {
+    width: 95%; /* تصغير الصورة */
+  }
+
+  .title {
+    font-size: large; /* تصغير حجم العنوان */
+  }
+
+  .btn {
+    font-size: 16px;
+    padding: 8px 15px;
+    border-radius: 10px; /* تصغير الزوايا */
+  }
+
+  header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
+
+/* للموبايلات الصغيرة جداً */
+@media (max-width: 400px) {
+  .navbar ul {
+    gap: 5px;
+  }
+
+  .btn {
+    width: 100%;
+    box-sizing: border-box;
+  }
+}
